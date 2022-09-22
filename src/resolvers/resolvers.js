@@ -13,10 +13,10 @@ const Query = {
         return result;
     },
     infos: async (parent,args,content,info) =>{
-        const response = await fetch(`${API_URL}/infos`);
+        const response = await fetch(`${API_URL}/infos?type=${args.type}`);
         const result = await response.json();
         return result;
-    },
+    }
 };
 
 

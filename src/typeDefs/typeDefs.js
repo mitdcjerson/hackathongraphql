@@ -18,3 +18,4 @@ const typeDefs = gql`
         result: String,
     }
 `;
+module.exports = typeDefs;
